@@ -1,0 +1,25 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--color-section-background);
+}
+
+.footer__container {
+  @include dis-al(flex, baseline);
+}
+
+.footer-address {
+  margin-right: 70px;
+}
+
+.footer-networks__title,
+.footer-subscription__title {
+  margin-bottom: 20px;
+  @include font-letter(14px, 1.2, 0.03em);
+  text-transform: uppercase;
+  color: var(--primary-whait-color);
+}
+
+.footer-subscription {
+  margin-left: auto;
+}

@@ -1,0 +1,25 @@
+.clients__title {
+  margin-bottom: 50px;
+}
+
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+.clients__link {
+  @include dis-al(flex, center);
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-icon);
+  border-radius: 4px;
+  color: var(--color-icon);
+  transition: border-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}

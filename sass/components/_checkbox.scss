@@ -1,0 +1,39 @@
+.checkbox {
+  margin-bottom: 30px;
+}
+
+.checkbox__input {
+  /*   скрыть через аппиренс или через виз хидден */
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox__icon {
+  border: 1px solid var(--title-text-color);
+  border-radius: 2px;
+  color: var(--primary-whait-color);
+
+  .checkbox__input:hover + &,
+  .checkbox__input:focus + & {
+    border-color: var(--accent-color);
+  }
+
+  .checkbox__input:checked + & {
+    border: 0;
+    background-color: var(--accent-color);
+  }
+}
+
+.checkbox__label {
+  @include dis-al(flex, baseline);
+  gap: 4px;
+  justify-content: center;
+  @include font(400, 14px, 1.71429, 0.03em);
+  color: var(--primary-text-color);
+}
+
+.checkbox__link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--accent-color);
+}

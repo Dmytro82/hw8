@@ -1,0 +1,24 @@
+.quality__list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.quality__icon {
+  width: 100%;
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--color-section-background2);
+}
+
+.quality__title {
+  margin-bottom: 10px;
+  @include font-letter(14px, 1.2, 0.03em);
+  color: var(--title-text-color);
+}
+
+.quality__text {
+  @include font-letter(14px, 1.71, 0.03em);
+}

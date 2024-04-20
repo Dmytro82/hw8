@@ -1,0 +1,25 @@
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: var(--color-section-background);
+  background-image: linear-gradient(
+      to right,
+      var(--hero-gradient),
+      var(--hero-gradient)
+    ),
+    url(../images/bghero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  @include font(900, 44px, 1.36, 0.06em);
+  color: var(--primary-whait-color);
+}
+
+.hero__btn {
+  min-width: 216px;
+}

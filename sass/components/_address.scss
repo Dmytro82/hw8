@@ -1,0 +1,24 @@
+.address {
+  @include font(400, 14px, 1.71, 0.03em);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__map {
+  color: var(--primary-whait-color);
+}
+
+.address__hover {
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__contact {
+  color: var(--color-with-transparency);
+}

@@ -1,0 +1,33 @@
+//@include dis-al($dis, $al);
+@mixin dis-al($dis, $al) {
+  display: $dis;
+  align-items: $al;
+}
+
+// @include font-line($fs, $lh);
+@mixin font-line($fs, $lh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+// @include font(500, 16px, 1.2, 0.03em);
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+// @include font-letter(14px, 1.2, 0.03em);
+@mixin font-letter($fs, $lh, $ls) {
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+// @include font-weight($fw, $fs, $lh);
+@mixin font-weight($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
