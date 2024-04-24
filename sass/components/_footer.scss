@@ -5,11 +5,36 @@
 }
 
 .footer__container {
-  @include dis-al(flex, baseline);
+  @media screen and (max-width: 1199.5px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tab) {
+    @include dis-al(flex, baseline);
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199.5px) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 165px;
+    row-gap: 60px;
+  }
 }
 
 .footer-address {
-  margin-right: 70px;
+  @media screen and (max-width: 767.5px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tab) {
+  }
+  @media screen and (min-width: $desk) {
+    margin-right: 70px;
+  }
+}
+
+.footer-networks {
+  @media screen and (max-width: 767.5px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-networks__title,
@@ -21,5 +46,7 @@
 }
 
 .footer-subscription {
-  margin-left: auto;
+  @media screen and (min-width: $desk) {
+    margin-left: auto;
+  }
 }

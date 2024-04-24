@@ -1,7 +1,11 @@
 .logo {
   font-family: 'Raleway', sans-serif;
-  @include font(700, 26px, 1.2, 0.03em);
+  @include font(700, 24px, 1.2, 0.03em);
   color: var(--primary-black-color);
+
+  @media screen and (min-width: $desk) {
+    font-size: 26px;
+  }
 
   &__blue {
     color: var(--accent-color);

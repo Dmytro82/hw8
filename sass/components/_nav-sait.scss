@@ -1,4 +1,7 @@
 .nav-sait {
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
   display: flex;
   column-gap: 50px;
   margin-left: 93px;

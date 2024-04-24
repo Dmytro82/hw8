@@ -1,11 +1,21 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desk) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title {
-    margin-bottom: 50px;
-    @include font-letter(36px, 1.2, 0.03em);
+    margin-bottom: 30px;
+    @include font-letter(28px, 1.2, 0.03em);
     text-align: center;
     color: var(--primary-black-color);
+
+    @media screen and (min-width: $desk) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
   }
 }

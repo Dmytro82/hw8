@@ -1,7 +1,22 @@
 .container {
+  outline: 1px solid rgb(51, 234, 241);
   margin-right: auto;
   margin-left: auto;
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
+
+  @media screen and (min-width: $mob) {
+    max-width: 480px;
+    outline: 1px solid rgb(230, 253, 21);
+  }
+
+  @media screen and (min-width: $tab) {
+    max-width: $tab;
+    outline: 1px solid rgb(247, 53, 224);
+  }
+
+  @media screen and (min-width: $desk) {
+    max-width: 1200px;
+    outline: 1px solid rgb(43, 232, 30);
+  }
 }

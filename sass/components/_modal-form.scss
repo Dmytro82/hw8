@@ -57,8 +57,11 @@
 
   &::placeholder {
     align-items: center;
-    @include font(400, 12px, 1.2, 0.01em);
+    @include font(400, 14px, 1.2, 0.01em);
     color: var(--color-texterea-placeholder);
+    @media screen and (min-width: $desk) {
+      font-size: 12px;
+    }
   }
 }
 

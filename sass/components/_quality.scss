@@ -1,6 +1,23 @@
 .quality__list {
-  display: flex;
-  column-gap: 30px;
+  @media screen and (min-width: $tab) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: $desk) {
+    flex-wrap: nowrap;
+  }
+}
+
+.quality__item {
+  flex-basis: calc((100% - 30px) / 2);
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767.5px) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .quality__icon {
@@ -11,6 +28,9 @@
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: var(--color-section-background2);
+
+  @media screen and (min-width: $tab) {
+  }
 }
 
 .quality__title {

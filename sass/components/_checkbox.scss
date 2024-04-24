@@ -28,8 +28,12 @@
   @include dis-al(flex, baseline);
   gap: 4px;
   justify-content: center;
-  @include font(400, 14px, 1.71429, 0.03em);
+  @include font(400, 12px, 1.2, 0.03em);
   color: var(--primary-text-color);
+  @media screen and (min-width: $desk) {
+    font-size: 14px;
+    line-height: 1.71429;
+  }
 }
 
 .checkbox__link {
