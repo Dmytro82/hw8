@@ -8,19 +8,34 @@
       var(--hero-gradient),
       var(--hero-gradient)
     ),
-    url(../../images/bgheroMob.jpg);
+    url(../../images/studio/HeaderMob.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../images/studio/HeaderMob@2x.jpg);
+  }
 
   @media screen and (min-width: $tab) {
-    background-image: url(../../images/bgheroTab.jpg);
+    background-image: url(../../images/studio/HeaderTab.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../images/studio/HeaderTab@2x.jpg);
+    }
   }
 
   @media screen and (min-width: $desk) {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../../images/bghero.jpg);
+    background-image: url(../../images/studio/HeaderDesk.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../images/studio/HeaderDesk@2x.jpg);
+    }
   }
 }
 
